@@ -2,63 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/HowToPlayScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/InputNameScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/Bg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/Bg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/Bg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/Bg4 copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/Bg5_loading.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/Bg6_inputname.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/Bg_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/Monday.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/Xbutton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/bg_หน้า1+logo copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/bg_หน้า1+logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/bingoButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/box.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/closebutton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/congrats.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/continueButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/d11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/d2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/d3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/d4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/d5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/d6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/d7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/fail copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/fri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/friBS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/grey1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/grey2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/howTOplaybutton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/mon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/monBS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/popupInputName.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/randomButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/reButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/sat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/satBS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/screen_InputName copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/screen_InputName.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/setButton copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/setButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/startbutton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/sun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/sunBS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/thu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/thuBS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/tue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/tueBS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/wed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/wedBS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoClick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoGrid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/DisplayRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/DisplayRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/MainDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/StartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/StartScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651141678144</updated>
       <workItem from="1651141681053" duration="1431000" />
-      <workItem from="1651143162729" duration="6846000" />
+      <workItem from="1651143162729" duration="8557000" />
     </task>
     <servers />
   </component>

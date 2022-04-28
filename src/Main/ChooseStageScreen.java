@@ -1,5 +1,7 @@
 package Main;
 
+import Bingo.MondayStage;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -60,7 +62,7 @@ public class ChooseStageScreen extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 MainDisplay.window.getContentPane().removeAll();
-                //MainDisplay.window.add(new InputNameScreen());
+                MainDisplay.window.add(new MondayStage());
                 MainDisplay.window.validate();
             }
         });
