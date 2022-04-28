@@ -42,6 +42,7 @@ public class HowToPlayScreen extends JPanel {
                 MainDisplay.window.validate();
             }
         });
+        howToPlayScreen.add(closeButton);
         howToPlayScreen.add(howToPlayBackground);
     }
 }

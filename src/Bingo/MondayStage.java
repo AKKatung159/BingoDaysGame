@@ -1,5 +1,7 @@
 package Bingo;
 
+import Main.MainDisplay;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -7,7 +9,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class MondayStage extends JPanel {
+public class MondayStage extends JPanel{
     public static String nameStage = "Monday";
     public static final int WIDTH = 1295;
     public static final int LENGTH = 715;
@@ -32,12 +34,27 @@ public class MondayStage extends JPanel {
     private boolean startGame = false;
     private boolean winner = false;
 
+    public static JPanel mondayStage;
+    private JLabel mondayBackground;
     /**
      * Constructs the game window
      */
     public MondayStage() {
+        //create panel
+        mondayStage = new JPanel();
+        mondayStage.setBounds(0, 0, 1310, 715); //ขนาดรูป
+        mondayStage.setBackground(Color.black);
+        mondayStage.setLayout(null);
+        MainDisplay.window.add(mondayStage);
 
-        setSize(WIDTH, LENGTH);
+        /*
+        //create Background
+        mondayBackground = new JLabel();
+        mondayBackground.setBounds(0, 0, 1310, 715);
+        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg3.png")); // เพิ่มBackground
+        mondayBackground.setIcon(bgIcon);
+
+         */
 
 
         //JButtons
@@ -51,7 +68,7 @@ public class MondayStage extends JPanel {
         ImageIcon buttonIcon;
 
         //start
-        add(start);
+        mondayStage.add(start);
         start.setBounds(0, 0, 200, 89);
         start.setBackground(null);
         start.setContentAreaFilled(false);
@@ -63,7 +80,7 @@ public class MondayStage extends JPanel {
         start.setIcon(buttonIcon);
 
         //stop
-        add(stop);
+        mondayStage.add(stop);
         stop.setBounds(0, 0, 200, 89);
         stop.setBackground(null);
         stop.setContentAreaFilled(false);
@@ -75,8 +92,8 @@ public class MondayStage extends JPanel {
         stop.setIcon(buttonIcon);
 
         //reset
-        add(reset);
-        reset.setBounds(0, 0, 200, 89);
+        mondayStage.add(reset);
+        reset.setBounds(200, 0, 200, 89);
         reset.setBackground(null);
         reset.setContentAreaFilled(false);
         reset.setFocusPainted(false);
@@ -87,8 +104,8 @@ public class MondayStage extends JPanel {
         reset.setIcon(buttonIcon);
 
         //bingo
-        add(bingo);
-        bingo.setBounds(0, 0, 200, 89);
+        mondayStage.add(bingo);
+        bingo.setBounds(500, 0, 200, 89);
         bingo.setBackground(null);
         bingo.setContentAreaFilled(false);
         bingo.setFocusPainted(false);
@@ -99,8 +116,8 @@ public class MondayStage extends JPanel {
         bingo.setIcon(buttonIcon);
 
         //nextnum
-        add(nextNum);
-        nextNum.setBounds(0, 0, 200, 89);
+        mondayStage.add(nextNum);
+        nextNum.setBounds(800, 0, 200, 89);
         nextNum.setBackground(null);
         nextNum.setContentAreaFilled(false);
         nextNum.setFocusPainted(false);
@@ -125,9 +142,6 @@ public class MondayStage extends JPanel {
         start.addActionListener(buttonListener);
         stop.addActionListener(buttonListener);
 
-        //layout = this.getContentPane();
-        //layout.add(panel, "South");
-        //setVisible(true);
 
         mouseListener = new MouseClickListener();
         timer = new MyTimer();
@@ -139,14 +153,16 @@ public class MondayStage extends JPanel {
 
         bingoNumbers = new BingoNumbers();
 
+
         add(clickGrid);
         setVisible(true);
+
+        clickGrid.addMouseListener(mouseListener);
 
         add(bingoNumbers);
         setVisible(true);
 
-        clickGrid.addMouseListener(mouseListener);
-        setVisible(true);
+        //mondayStage.add(mondayBackground);
     }
 
     public void paintComponent(Graphics g) {
@@ -203,7 +219,7 @@ public class MondayStage extends JPanel {
             } else if (source == bingo) { //checks if the human grid has won
                 if (!winner) {
                     if (clickGrid.checkWin()) {
-                        clickGrid.setWinnerMessage("WINNER: HUMAN");
+                        clickGrid.setWinnerMessage("BINGO");
                         winner = true;
                     } else {
                         clickGrid.setWinnerMessage("Sorry, you haven't gotten bingo.");
@@ -223,7 +239,7 @@ public class MondayStage extends JPanel {
             }
             clickGrid.repaint();
             bingoNumbers.repaint();
-            layout.repaint();
+
         }
     }
 }

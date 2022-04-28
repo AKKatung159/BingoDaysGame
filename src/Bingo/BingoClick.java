@@ -1,5 +1,6 @@
 package Bingo;
 
+import javax.swing.*;
 import java.awt.*;
 
 public class BingoClick extends BingoGrid{
@@ -10,6 +11,14 @@ public class BingoClick extends BingoGrid{
         indentX = 0;
         indentY = 0;
         initializeGrid();
+
+        //create Background
+        JLabel mondayBackground = new JLabel();
+        mondayBackground.setBounds(0, 0, 1310, 715);
+        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg3.png")); // เพิ่มBackground
+        mondayBackground.setIcon(bgIcon);
+        setSize(WIDTH, LENGTH);
+        add(mondayBackground);
     }
 
     /**

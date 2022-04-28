@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoClick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoGrid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bingo/BingoSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/MondayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/MondayStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/HowToPlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/HowToPlayScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MainDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MainDisplay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +34,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/matcy/Desktop/fresher/Prog Tech Lab/BingoDaysGame/src",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/matcy/Desktop/fresher/Prog Tech Lab/BingoDaysGame/src&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -79,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1651141678144</updated>
       <workItem from="1651141681053" duration="1431000" />
-      <workItem from="1651143162729" duration="8557000" />
+      <workItem from="1651143162729" duration="9221000" />
+      <workItem from="1651153924998" duration="1366000" />
     </task>
     <servers />
   </component>

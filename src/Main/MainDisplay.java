@@ -1,5 +1,7 @@
 package Main;
 
+import Bingo.MondayStage;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -21,7 +23,9 @@ public class MainDisplay {
         window.getContentPane().setBackground(Color.black);
         window.setLayout(null);
 
-        new StartScreen();
+        //new StartScreen();
+        new MondayStage();
+        //new HowToPlayScreen();
 
 
 

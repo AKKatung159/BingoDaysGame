@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class BingoNumbers extends JPanel {
+public class BingoNumbers extends JComponent {
     public static ArrayList<Integer> numbers = new ArrayList<Integer>();
 
     public BingoNumbers() {}

@@ -3,7 +3,7 @@ package Bingo;
 import javax.swing.*;
 import java.util.ArrayList;
 
-public class BingoGrid extends JPanel {
+public class BingoGrid extends JComponent {
     protected BingoSquare[][] grid;
     protected ArrayList<Integer> bingoGridNumbers;
     protected final int SQUARE_SIZE = 100;
