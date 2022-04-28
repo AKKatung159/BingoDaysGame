@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class MondayStage extends JPanel{
+public class MondayStage extends JFrame{
     public static String nameStage = "Monday";
     public static final int WIDTH = 1295;
     public static final int LENGTH = 715;
@@ -34,28 +34,21 @@ public class MondayStage extends JPanel{
     private boolean startGame = false;
     private boolean winner = false;
 
-    public static JPanel mondayStage;
+    public static JPanel panel;
     private JLabel mondayBackground;
     /**
      * Constructs the game window
      */
     public MondayStage() {
+        setSize(WIDTH, LENGTH);
+        setResizable(false);
+        setLocationRelativeTo(null);
+        setTitle("Bingo Days Game");
+        setIconImage(Toolkit.getDefaultToolkit().getImage("logo.png"));
+
         //create panel
-        mondayStage = new JPanel();
-        mondayStage.setBounds(0, 0, 1310, 715); //ขนาดรูป
-        mondayStage.setBackground(Color.black);
-        mondayStage.setLayout(null);
-        MainDisplay.window.add(mondayStage);
-
-        /*
-        //create Background
-        mondayBackground = new JLabel();
-        mondayBackground.setBounds(0, 0, 1310, 715);
-        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg3.png")); // เพิ่มBackground
-        mondayBackground.setIcon(bgIcon);
-
-         */
-
+        panel = new JPanel();
+        //panel.setBackground(new Color(0,0,0,0));
 
         //JButtons
         reset = new JButton();
@@ -68,7 +61,7 @@ public class MondayStage extends JPanel{
         ImageIcon buttonIcon;
 
         //start
-        mondayStage.add(start);
+        panel.add(start);
         start.setBounds(0, 0, 200, 89);
         start.setBackground(null);
         start.setContentAreaFilled(false);
@@ -80,7 +73,7 @@ public class MondayStage extends JPanel{
         start.setIcon(buttonIcon);
 
         //stop
-        mondayStage.add(stop);
+        panel.add(stop);
         stop.setBounds(0, 0, 200, 89);
         stop.setBackground(null);
         stop.setContentAreaFilled(false);
@@ -92,7 +85,7 @@ public class MondayStage extends JPanel{
         stop.setIcon(buttonIcon);
 
         //reset
-        mondayStage.add(reset);
+        panel.add(reset);
         reset.setBounds(200, 0, 200, 89);
         reset.setBackground(null);
         reset.setContentAreaFilled(false);
@@ -104,7 +97,7 @@ public class MondayStage extends JPanel{
         reset.setIcon(buttonIcon);
 
         //bingo
-        mondayStage.add(bingo);
+        panel.add(bingo);
         bingo.setBounds(500, 0, 200, 89);
         bingo.setBackground(null);
         bingo.setContentAreaFilled(false);
@@ -116,7 +109,7 @@ public class MondayStage extends JPanel{
         bingo.setIcon(buttonIcon);
 
         //nextnum
-        mondayStage.add(nextNum);
+        panel.add(nextNum);
         nextNum.setBounds(800, 0, 200, 89);
         nextNum.setBackground(null);
         nextNum.setContentAreaFilled(false);
@@ -142,6 +135,9 @@ public class MondayStage extends JPanel{
         start.addActionListener(buttonListener);
         stop.addActionListener(buttonListener);
 
+        layout = this.getContentPane();
+        layout.add(panel, "South");
+        setVisible(true);
 
         mouseListener = new MouseClickListener();
         timer = new MyTimer();
@@ -153,16 +149,21 @@ public class MondayStage extends JPanel{
 
         bingoNumbers = new BingoNumbers();
 
-
         add(clickGrid);
         setVisible(true);
-
         clickGrid.addMouseListener(mouseListener);
 
         add(bingoNumbers);
         setVisible(true);
 
-        //mondayStage.add(mondayBackground);
+        //create Background
+        mondayBackground = new JLabel();
+        mondayBackground.setBounds(0, 0, 1310, 715);
+        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg3.png")); // เพิ่มBackground
+        mondayBackground.setIcon(bgIcon);
+        add(mondayBackground);
+
+
     }
 
     public void paintComponent(Graphics g) {
@@ -239,7 +240,7 @@ public class MondayStage extends JPanel{
             }
             clickGrid.repaint();
             bingoNumbers.repaint();
-
+            layout.repaint();
         }
     }
 }

@@ -8,17 +8,10 @@ public class BingoClick extends BingoGrid{
     public BingoClick() {
         super();
 
-        indentX = 0;
-        indentY = 0;
+        indentX = 470;
+        indentY = 200;
         initializeGrid();
 
-        //create Background
-        JLabel mondayBackground = new JLabel();
-        mondayBackground.setBounds(0, 0, 1310, 715);
-        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg3.png")); // เพิ่มBackground
-        mondayBackground.setIcon(bgIcon);
-        setSize(WIDTH, LENGTH);
-        add(mondayBackground);
     }
 
     /**
