@@ -1,11 +1,7 @@
 package Main;
 
-import Bingo.MondayStage;
-
 import javax.swing.*;
 import java.awt.*;
-
-import static Main.StartScreen.startScreen;
 
 public class MainDisplay {
     public static JFrame window;
@@ -24,8 +20,9 @@ public class MainDisplay {
         window.setLayout(null);
 
         //new StartScreen();
-        new MondayStage();
+        new Stage.MondayStage();
         //new HowToPlayScreen();
+        //new ChooseStageScreen();
 
 
 

@@ -1,32 +1,34 @@
 package Bingo;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 
 public class BingoGrid extends JComponent {
     protected BingoSquare[][] grid;
     protected ArrayList<Integer> bingoGridNumbers;
-    protected final int SQUARE_SIZE = 100;
+    protected final int SQUARE_SIZE = 80;
     protected final int LENGTH = 4;
     protected final int WIDTH = 4;
-    public static final String[] BINGO = {"D", " A", "Y", "S"};
+    public static final String[] BINGO = {"D", "A", "Y", "S"};
     public int indentX;
     public int indentY;
     protected String winnerMessage;
 
+
     public BingoGrid() {
         grid = new BingoSquare[WIDTH][LENGTH];
         bingoGridNumbers = new ArrayList<Integer>();
-        winnerMessage = "";
+        winnerMessage = "null";
     }
 
     /**
      * Checks if the value created is already in the array
+     *
      * @param value the number to check
      * @return true if the value is in the array
      */
-    public boolean isFound(int value, int r , int c)
-    {
+    public boolean isFound(int value, int r, int c) {
         for (int row = 0; row < r; row++) {
             for (int col = 0; col <= c; col++) {
                 if (value == grid[row][col].getValue()) {
@@ -45,7 +47,7 @@ public class BingoGrid extends JComponent {
             for (int col = 0; col < grid[0].length; col++) {
                 grid[row][col] = new BingoSquare(col * SQUARE_SIZE + indentX, row * SQUARE_SIZE + indentY, SQUARE_SIZE, SQUARE_SIZE);
                 int value = grid[row][col].createNum(col + 1);
-                while (isFound(value,row,col))
+                while (isFound(value, row, col))
                     value = grid[row][col].createNum(col + 1);
             }
         }
@@ -182,3 +184,5 @@ public class BingoGrid extends JComponent {
         winnerMessage = newMsg;
     }
 }
+
+

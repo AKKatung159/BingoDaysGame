@@ -14,6 +14,23 @@ public class BingoScore {
         return 0;
     }
 
+
+
     public BingoScore(){
+        int getScore;
+
+        /*switch(numStage){
+            case 1 : getScore = 20; break;
+            case 2 : getScore = 30; break;
+            case 3 : getScore = 40; break;
+            case 4 : getScore = 50; break;
+            case 5 : getScore = 60; break;
+            case 6 : getScore = 70; break;
+            case 7 : getScore = 80; break;
+
+         */
+
+
+        }
     }
-}
+

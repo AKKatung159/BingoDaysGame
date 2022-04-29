@@ -1,7 +1,5 @@
 package Bingo;
 
-import Main.MainDisplay;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,8 +7,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class MondayStage extends JFrame{
-    public static String nameStage = "Monday";
+public class BingoGame extends JFrame{
+    public int numStage = 1;
     public static final int WIDTH = 1295;
     public static final int LENGTH = 715;
 
@@ -35,11 +33,8 @@ public class MondayStage extends JFrame{
     private boolean winner = false;
 
     public static JPanel panel;
-    private JLabel mondayBackground;
-    /**
-     * Constructs the game window
-     */
-    public MondayStage() {
+
+    public BingoGame() {
 
         setSize(WIDTH, LENGTH);
         setResizable(false);
@@ -143,7 +138,7 @@ public class MondayStage extends JFrame{
 
         mouseListener = new MouseClickListener();
         timer = new MyTimer();
-        DELAY = 3500;
+        DELAY = 3000;
         Timer t = new Timer(DELAY, timer);
         t.start();
 
@@ -157,15 +152,6 @@ public class MondayStage extends JFrame{
 
         add(bingoNumbers);
         setVisible(true);
-
-
-
-        //create Background
-        mondayBackground = new JLabel();
-        mondayBackground.setBounds(0, 0, 1310, 715);
-        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg3.png")); // เพิ่มBackground
-        mondayBackground.setIcon(bgIcon);
-        add(mondayBackground);
 
     }
     //the timer
