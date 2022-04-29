@@ -46,7 +46,7 @@ public class StartScreen extends JPanel {
 
         //create how to play Button
         JButton howToPlayButton = new JButton();
-        howToPlayButton.setBounds(480, 560, 350, 87);
+        howToPlayButton.setBounds(480, 560, 328, 87);
         howToPlayButton.setBackground(null);
         howToPlayButton.setContentAreaFilled(false);
         howToPlayButton.setFocusPainted(false);
@@ -54,9 +54,9 @@ public class StartScreen extends JPanel {
         howToPlayButton.setToolTipText("HOW TO PLAY");
 
         ImageIcon howToPlayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/howTOplaybutton.png")); // เพิ่มรูปปุ่ม
-        startButton.setIcon(howToPlayButtonIcon);
+        howToPlayButton.setIcon(howToPlayButtonIcon);
 
-        startButton.addActionListener(new ActionListener() {
+        howToPlayButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 MainDisplay.window.getContentPane().removeAll();

@@ -64,7 +64,6 @@ public class BingoGame extends JFrame{
         start.setContentAreaFilled(false);
         start.setFocusPainted(false);
         start.setBorderPainted(false);
-        start.setToolTipText("NEXT");
 
         buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/startButton.png")); // เพิ่มรูปปุ่ม
         start.setIcon(buttonIcon);
@@ -76,7 +75,6 @@ public class BingoGame extends JFrame{
         stop.setContentAreaFilled(false);
         stop.setFocusPainted(false);
         stop.setBorderPainted(false);
-        stop.setToolTipText("NEXT");
 
         buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/closeButton.png")); // เพิ่มรูปปุ่ม
         stop.setIcon(buttonIcon);
@@ -88,7 +86,6 @@ public class BingoGame extends JFrame{
         reset.setContentAreaFilled(false);
         reset.setFocusPainted(false);
         reset.setBorderPainted(false);
-        reset.setToolTipText("NEXT");
 
         buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/reButton.png")); // เพิ่มรูปปุ่ม
         reset.setIcon(buttonIcon);
@@ -100,7 +97,6 @@ public class BingoGame extends JFrame{
         bingo.setContentAreaFilled(false);
         bingo.setFocusPainted(false);
         bingo.setBorderPainted(false);
-        bingo.setToolTipText("NEXT");
 
         buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/bingoButton.png")); // เพิ่มรูปปุ่ม
         bingo.setIcon(buttonIcon);
@@ -112,7 +108,6 @@ public class BingoGame extends JFrame{
         nextNum.setContentAreaFilled(false);
         nextNum.setFocusPainted(false);
         nextNum.setBorderPainted(false);
-        nextNum.setToolTipText("NEXT");
 
         buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/randomButton.png")); // เพิ่มรูปปุ่ม
         nextNum.setIcon(buttonIcon);

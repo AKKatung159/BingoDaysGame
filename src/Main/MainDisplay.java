@@ -19,8 +19,8 @@ public class MainDisplay {
         window.getContentPane().setBackground(Color.black);
         window.setLayout(null);
 
-        //new StartScreen();
-        new Stage.MondayStage();
+        new StartScreen();
+        //new Stage.MondayStage();
         //new HowToPlayScreen();
         //new ChooseStageScreen();
 
