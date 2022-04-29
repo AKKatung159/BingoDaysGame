@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ChooseStageScreen extends JPanel {
+public class ChooseStageScreen extends JComponent {
     public static JPanel chooseStageScreen;
     private JLabel chooseStageBackground;
 
@@ -58,17 +58,6 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon returnButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/rebutton.png")); // เพิ่มรูปปุ่ม
         returnButton.setIcon(returnButtonIcon);
 
-        //prints meseage high score
-        String highScoreMessage = "HIGH SCORE :" + BingoScore.getHighScore();
-        JLabel highScoreLabel = new JLabel(highScoreMessage);
-        highScoreLabel.setBounds(700,50,0,0);
-
-
-        //prints meseage high score
-        String NextUnlockMessage = "NEXT UNLOCKED AT :" + BingoScore.getNextUnlocked();
-        JLabel nextunlockLabel = new JLabel(NextUnlockMessage);
-        nextunlockLabel.setBounds(200,50,0,0);
-
         returnButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -99,12 +88,30 @@ public class ChooseStageScreen extends JPanel {
             }
         });
 
-        chooseStageScreen.add(highScoreLabel);
-        chooseStageScreen.add(nextunlockLabel);
         chooseStageScreen.add(closeButton);
         chooseStageScreen.add(returnButton);
         chooseStageScreen.add(chooseStageBackground);
 
+    }
+
+    public void paintComponent(Graphics g) {
+        Graphics2D g2 = (Graphics2D) g;
+
+        //font anti-aliasing
+        g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+
+        int letterFont = 48; //font for B I N G O letters
+        Font font = new Font("SansSerif", Font.BOLD, letterFont);
+
+        g2.setFont(font);
+
+        //prints meseage high score
+        String highScoreMessage = "HIGH SCORE :" + BingoScore.getHighScore();
+        g2.drawString(highScoreMessage, 1000, 50);
+
+        //prints meseage next unlocked
+        String nextUnlockMessage = "NEXT UNLOCKED AT :" + BingoScore.getNextUnlocked();
+        g2.drawString(highScoreMessage, 100, 50);
     }
 
 

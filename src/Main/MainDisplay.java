@@ -20,9 +20,10 @@ public class MainDisplay {
         window.setLayout(null);
 
         //new StartScreen();
-        new Stage.MondayStage();
+        //new Stage.MondayStage();
         //new HowToPlayScreen();
-        //new ChooseStageScreen();
+        new ChooseStageScreen();
+        //new InputNameScreen();
 
 
 

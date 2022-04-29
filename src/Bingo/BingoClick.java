@@ -117,18 +117,13 @@ public class BingoClick extends BingoGrid{
         String highScoreMessage = "HIGH SCORE :" + BingoScore.getHighScore();
         g2.drawString(highScoreMessage, 1000, 50);
 
-
         //prints meseage score you will get
         String ScoreYouWillMessage = " SCORE YOU WII GET :" ;
         g2.drawString(ScoreYouWillMessage, 100, 50);
 
-
-
         //prints message if grid has won
         g2.setColor(Color.RED);
         g2.drawString(winnerMessage, 590, 350);
-
-
 
     }
 }
