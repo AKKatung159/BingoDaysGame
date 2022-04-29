@@ -40,13 +40,15 @@ public class MondayStage extends JFrame{
      * Constructs the game window
      */
     public MondayStage() {
+
         setSize(WIDTH, LENGTH);
         setResizable(false);
         setLocationRelativeTo(null);
         setTitle("Bingo Days Game");
         setIconImage(Toolkit.getDefaultToolkit().getImage("logo.png"));
 
-        //create panel
+
+        //create panel for container button
         panel = new JPanel();
         //panel.setBackground(new Color(0,0,0,0));
 
@@ -156,6 +158,8 @@ public class MondayStage extends JFrame{
         add(bingoNumbers);
         setVisible(true);
 
+
+
         //create Background
         mondayBackground = new JLabel();
         mondayBackground.setBounds(0, 0, 1310, 715);
@@ -163,22 +167,6 @@ public class MondayStage extends JFrame{
         mondayBackground.setIcon(bgIcon);
         add(mondayBackground);
 
-
-    }
-
-    public void paintComponent(Graphics g) {
-        Graphics2D g2 = (Graphics2D) g;
-
-        //font anti-aliasing
-        g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-
-        int fontSize = 45;
-        int bigFont = 80;
-        Font font = new Font("SansSerif", Font.PLAIN, fontSize);
-        g2.setFont(font);
-
-        String call = "High Score :" + BingoScore.getHighScore();
-        g2.drawString(call, 1020, 200);
     }
     //the timer
     class MyTimer implements ActionListener {

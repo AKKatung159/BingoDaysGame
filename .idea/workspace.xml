@@ -4,7 +4,9 @@
     <list default="true" id="c6f44a18-cc1c-4640-a0a1-37c6ec2f4a94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bingo/BingoClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bingo/BingoScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/BingoScore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bingo/MondayStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bingo/MondayStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ChooseStageScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,8 @@
       <updated>1651141678144</updated>
       <workItem from="1651141681053" duration="1431000" />
       <workItem from="1651143162729" duration="9221000" />
-      <workItem from="1651153924998" duration="3366000" />
+      <workItem from="1651153924998" duration="3423000" />
+      <workItem from="1651188803042" duration="2991000" />
     </task>
     <servers />
   </component>

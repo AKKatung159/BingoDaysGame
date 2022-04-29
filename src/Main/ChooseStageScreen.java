@@ -1,5 +1,6 @@
 package Main;
 
+import Bingo.BingoScore;
 import Bingo.MondayStage;
 
 import javax.swing.*;
@@ -62,7 +63,7 @@ public class ChooseStageScreen extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 MainDisplay.window.getContentPane().removeAll();
-                MainDisplay.window.add(new MondayStage());
+                //MainDisplay.window.add(new MondayStage());
                 MainDisplay.window.validate();
             }
         });
@@ -132,14 +133,20 @@ public class ChooseStageScreen extends JPanel {
             ImageIcon tuesdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/tue.png")); // เพิ่มรูปปุ่ม
             tuesdayButton.setIcon(tuesdayButtonIcon);
 
-            tuesdayButton.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    MainDisplay.window.getContentPane().removeAll();
-                    //MainDisplay.window.add(new InputNameScreen());
-                    MainDisplay.window.validate();
-                }
-            });
+            //lock button
+            JLabel lockbutton = new JLabel();
+            ImageIcon lockIcon = new ImageIcon(getClass().getClassLoader().getResource("image/lockIcon.png"));
+
+            if(BingoScore.getHighScore() >= 20) {
+                tuesdayButton.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        MainDisplay.window.getContentPane().removeAll();
+                        //MainDisplay.window.add(new InputNameScreen());
+                        MainDisplay.window.validate();
+                    }
+                });
+            }
             chooseStageScreen.add(tuesdayButton);
         }
 
@@ -156,15 +163,17 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon wednesdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/wed.png")); // เพิ่มรูปปุ่ม
         wednesdayButton.setIcon(wednesdayButtonIcon);
 
-        wednesdayButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                MainDisplay.window.getContentPane().removeAll();
-                //MainDisplay.window.add(new InputNameScreen());
-                MainDisplay.window.validate();
-            }
-        });
-        chooseStageScreen.add(wednesdayButton);
+        if(BingoScore.getHighScore() >= 60) {
+            wednesdayButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    MainDisplay.window.getContentPane().removeAll();
+                    //MainDisplay.window.add(new InputNameScreen());
+                    MainDisplay.window.validate();
+                }
+            });
+            chooseStageScreen.add(wednesdayButton);
+        }
     }
 
     public void createThursdayButton() {
@@ -180,15 +189,17 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon thursdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/thu.png")); // เพิ่มรูปปุ่ม
         thursdayButton.setIcon(thursdayButtonIcon);
 
-        thursdayButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                MainDisplay.window.getContentPane().removeAll();
-                //MainDisplay.window.add(new InputNameScreen());
-                MainDisplay.window.validate();
-            }
-        });
-        chooseStageScreen.add(thursdayButton);
+        if(BingoScore.getHighScore() >= 110) {
+            thursdayButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    MainDisplay.window.getContentPane().removeAll();
+                    //MainDisplay.window.add(new InputNameScreen());
+                    MainDisplay.window.validate();
+                }
+            });
+            chooseStageScreen.add(thursdayButton);
+        }
     }
 
     public void createFridayButton() {
@@ -204,15 +215,17 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon fridayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/fri.png")); // เพิ่มรูปปุ่ม
         fridayButton.setIcon(fridayButtonIcon);
 
-        fridayButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                MainDisplay.window.getContentPane().removeAll();
-                //MainDisplay.window.add(new InputNameScreen());
-                MainDisplay.window.validate();
-            }
-        });
-        chooseStageScreen.add(fridayButton);
+        if(BingoScore.getHighScore() >= 200) {
+            fridayButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    MainDisplay.window.getContentPane().removeAll();
+                    //MainDisplay.window.add(new InputNameScreen());
+                    MainDisplay.window.validate();
+                }
+            });
+            chooseStageScreen.add(fridayButton);
+        }
     }
 
     public void createSaturdayButton() {
@@ -228,15 +241,17 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon saturdayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/sat.png")); // เพิ่มรูปปุ่ม
         saturdayButton.setIcon(saturdayButtonIcon);
 
-        saturdayButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                MainDisplay.window.getContentPane().removeAll();
-                //MainDisplay.window.add(new InputNameScreen());
-                MainDisplay.window.validate();
-            }
-        });
-        chooseStageScreen.add(saturdayButton);
+        if(BingoScore.getHighScore() >= 300) {
+            saturdayButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    MainDisplay.window.getContentPane().removeAll();
+                    //MainDisplay.window.add(new InputNameScreen());
+                    MainDisplay.window.validate();
+                }
+            });
+            chooseStageScreen.add(saturdayButton);
+        }
     }
 
     public void createSundayButton() {
@@ -252,15 +267,17 @@ public class ChooseStageScreen extends JPanel {
         ImageIcon sundayButtonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/sun.png")); // เพิ่มรูปปุ่ม
         sundayButton.setIcon(sundayButtonIcon);
 
-        sundayButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                MainDisplay.window.getContentPane().removeAll();
-                //MainDisplay.window.add(new InputNameScreen());
-                MainDisplay.window.validate();
-            }
-        });
-        chooseStageScreen.add(sundayButton);
+        if(BingoScore.getHighScore() >= 400) {
+            sundayButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    MainDisplay.window.getContentPane().removeAll();
+                    //MainDisplay.window.add(new InputNameScreen());
+                    MainDisplay.window.validate();
+                }
+            });
+            chooseStageScreen.add(sundayButton);
+        }
     }
 }
 
