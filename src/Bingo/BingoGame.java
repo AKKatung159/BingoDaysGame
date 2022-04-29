@@ -76,7 +76,7 @@ public class BingoGame extends JFrame{
         stop.setFocusPainted(false);
         stop.setBorderPainted(false);
 
-        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/closeButton.png")); // เพิ่มรูปปุ่ม
+        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/stopButton.png")); // เพิ่มรูปปุ่ม
         stop.setIcon(buttonIcon);
 
         //reset
@@ -87,7 +87,7 @@ public class BingoGame extends JFrame{
         reset.setFocusPainted(false);
         reset.setBorderPainted(false);
 
-        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/reButton.png")); // เพิ่มรูปปุ่ม
+        buttonIcon = new ImageIcon(getClass().getClassLoader().getResource("image/resetButton.png")); // เพิ่มรูปปุ่ม
         reset.setIcon(buttonIcon);
 
         //bingo
