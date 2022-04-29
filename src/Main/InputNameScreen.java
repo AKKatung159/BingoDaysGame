@@ -18,7 +18,7 @@ public class InputNameScreen  extends JPanel{
         inputNameScreen.setBounds(0, 0, 1310, 715); //ขนาดรูป
         inputNameScreen.setBackground(Color.black);
         inputNameScreen.setLayout(null);
-        window.add(inputNameScreen);
+        //window.add(inputNameScreen);
 
         //create Background
         inputNameBackground = new JLabel();

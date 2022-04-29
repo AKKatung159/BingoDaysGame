@@ -14,13 +14,13 @@ public class MainDisplay {
         window.setResizable(false);
         window.setLocationRelativeTo(null);
         window.setTitle("Bingo Days Game"); //ชื่อบนหัวหน้าต่าง
-        window.setIconImage(Toolkit.getDefaultToolkit().getImage("logo.png"));  //ไอคอน
+        //window.setIconImage(Toolkit.getDefaultToolkit().getImage("logo.png"));  //ไอคอน
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //กดปิดwindow
-        window.getContentPane().setBackground(Color.black);
-        window.setLayout(null);
+        //window.getContentPane().setBackground(Color.black);
+        //window.setLayout(null);
 
-        //new StartScreen();
-        new Stage.MondayStage();
+        window.add(new StartScreen());
+        //new Stage.MondayStage();
         //new HowToPlayScreen();
         //new ChooseStageScreen();
 

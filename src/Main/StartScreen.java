@@ -10,20 +10,21 @@ public class StartScreen extends JPanel {
     private JLabel startBackground;
 
     public StartScreen() {
-        //create panel
-        startScreen = new JPanel();
-        startScreen.setBounds(0, 0, 1310, 715); //ขนาดรูป
-        startScreen.setBackground(Color.black);
-        startScreen.setLayout(null);
-        MainDisplay.window.add(startScreen);
-
-        //create Background
-        startBackground = new JLabel();
-        startBackground.setBounds(0, 0, 1310, 715);
-        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg1.png")); // เพิ่มBackground
-        startBackground.setIcon(bgIcon);
-
-        //create start button
+//        create panel
+//        //startScreen = new JPanel();
+//        setBounds(0, 0, 1310, 715); //ขนาดรูป
+//        setBackground(Color.black);
+//        setLayout(null);
+//        //MainDisplay.window.add(startScreen);
+//
+//        //create Background
+//        //startBackground = new JLabel();
+//        //startBackground.setBounds(0, 0, 1310, 715);
+//
+//        ImageIcon bgIcon = new ImageIcon(getClass().getClassLoader().getResource("image/Bg1.png")); // เพิ่มBackground
+//        startBackground.setIcon(bgIcon);
+//
+//        //create start button
         JButton startButton = new JButton();
         startButton.setBounds(550, 450, 200, 89);
         startButton.setBackground(null);
@@ -40,6 +41,8 @@ public class StartScreen extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 MainDisplay.window.getContentPane().removeAll();
                 MainDisplay.window.add(new InputNameScreen());
+                //new InputNameScreen();
+                //MainDisplay.window.add(new InputNameScreen());
                 MainDisplay.window.validate();
             }
         });
@@ -65,10 +68,20 @@ public class StartScreen extends JPanel {
             }
         });
 
-        startScreen.add(startButton);
-        startScreen.add(howToPlayButton);
-        startScreen.add(startBackground);
+        MainDisplay.window.add(startButton);
+        MainDisplay.window.add(howToPlayButton);
+        //MainDisplay.window.add(startBackground);
 
     }
+    public void paint(Graphics g){
+        repaint();
+        Toolkit t= Toolkit.getDefaultToolkit();
+        Image i =t.getImage("src/image/Bg1.png");
+        Image sb=t.getImage("src/image/startbutton.png");
+        Image hb=t.getImage("src/image/howTOplaybutton.png");
 
+        g.drawImage(i,0,0,this);
+        g.drawImage(sb,550, 450, 200, 89,this);
+        g.drawImage(hb,480, 560, 328, 87,this);
+    }
 }
